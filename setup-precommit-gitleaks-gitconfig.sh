@@ -217,10 +217,10 @@ setup_pre_commit_hook() {
     echo_yellow "Configuring pre-commit for Gitleaks..."
     
     # Check if we're in a git repository
-    if [ ! -d ".git" ]; then
-        echo_red "Error: Not in a git repository. Please run this script from the root of your git repository."
-        exit 1
-    fi
+    ##if [ ! -d ".git" ]; then
+    ##    echo_red "Error: Not in a git repository. Please run this script from the root of your git repository."
+    ##    exit 1
+    ##fi
     
     # Get the latest version for config
     if [ -z "$LATEST_VERSION" ]; then
